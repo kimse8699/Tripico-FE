@@ -1,0 +1,93 @@
+/* 전체 레이아웃 */
+body {
+    background-image: url('/img/base.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* 타이틀 */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E40AF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 서브타이틀 */
+.subtitle {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* 입력창 영역 */
+.input-container {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+/* 개별 입력창 */
+.input-field {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #1E40AF;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8f9ff;
+    box-sizing: border-box;
+}
+
+/* 비밀번호 찾기 */
+.forgot-password {
+    align-self: flex-end;
+    max-width: 360px;
+    width: 100%;
+    font-size: 14px;
+    color: #1E40AF;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* 로그인 버튼 */
+.submit-button {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #1E40AF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.submit-button:hover {
+    background-color: #163298;
+}
+
+/* 하단 회원가입 안내 */
+.bottom-text {
+    font-size: 14px;
+    color: #333;
+}

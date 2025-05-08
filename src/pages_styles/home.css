@@ -1,0 +1,110 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: transparent; /* body 백그라운드 보이도록 */
+}
+
+/* 상단 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E40AF;
+}
+
+/* 햄버거 메뉴 */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #6b7280;
+    border-radius: 2px;
+}
+
+/* 구분선 */
+.divider {
+    border: none;
+    border-top: 2px solid #1E40AF;
+    margin-bottom: 30px;
+}
+
+/* 일정 카드 */
+.schedule-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    margin: 0 auto 30px auto;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1E40AF;
+    margin-right: 16px;
+}
+
+/* 일정 정보 */
+.schedule-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.schedule-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.schedule-date {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* 체크 아이콘 */
+.check-icon {
+    font-size: 20px;
+    color: #1E40AF;
+}
+
+/* 하단 버튼 */
+.create-button {
+    width: 100%;
+    max-width: 360px;
+    margin: auto auto 20px auto;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #1E40AF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+    background-color: #163298;
+}
