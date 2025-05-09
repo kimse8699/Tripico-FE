@@ -1,12 +1,14 @@
 import '../pages_styles/home.css'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate ();
     return (
         <div className="schedule-container">
         {/* 상단 바 */}
         <div className="schedule-header">
             <h2 className="schedule-title">일정 목록</h2>
-            <button className="menu-icon"></button>
+            <button onClick={()=>{navigate('/mypage')}}className="menu-icon"></button>
         </div>
         <div className="schedule-underline"></div>
 
@@ -21,7 +23,7 @@ function Home() {
         </div>
 
         {/* 일정 생성 버튼 */}
-        <button className="create-button">일정 생성하기</button>
+        <button onClick={()=>{navigate('/create')}}className="create-button">일정 생성하기</button>
         </div>
     )
 }
