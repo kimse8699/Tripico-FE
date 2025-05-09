@@ -22,7 +22,7 @@ function Login() {
 
         <button className="submit-button">로그인</button>
 
-        <div className="bottom-text">
+        <div onClick={()=>{navigate('/signup')}}className="bottom-text">
             새로운 계정을 만드세요!
         </div>
     </div>
