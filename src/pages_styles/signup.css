@@ -1,0 +1,87 @@
+/* 전체 레이아웃 */
+body {
+    background-image: url('/img/base.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* 타이틀 */
+.signup-title {
+    font-size: 29px;
+    font-weight: bold;
+    color: #1E40AF;
+    margin-top: 9vh;
+    margin-bottom: -8vh;
+}
+
+/* 서브타이틀 */
+.signup-subtitle {
+    font-size: 17px;
+    color: #000;
+    margin-bottom: -2vh;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* 입력창 영역 */
+.signup-input-container {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: -2vh;
+}
+
+/* 개별 입력창 */
+.signup-input-field {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid  white;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8f9ff;
+    box-sizing: border-box;
+}
+
+.signup-input-field:focus {
+    border-color: #1E40AF;
+  }
+
+.signup-submit-button {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #1E40AF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: -3vh;
+}
+
+.submit-button:hover {
+    background-color: #163298;
+}
+
+/* 하단 회원가입 안내 */
+.signup-bottom-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8vh;
+}

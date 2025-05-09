@@ -9,28 +9,29 @@ body {
 
 .wrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 40px 20px;
     text-align: center;
     min-height: 100vh;
 }
 
 /* 타이틀 */
-.title {
-    font-size: 24px;
+.login-title {
+    font-size: 29px;
     font-weight: bold;
     color: #1E40AF;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 9vh;
+    margin-bottom: -8vh;
 }
 
 /* 서브타이틀 */
-.subtitle {
-    font-size: 16px;
+.login-subtitle {
+    font-size: 17px;
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: -2vh;
     line-height: 1.5;
+    font-weight: 600;
 }
 
 /* 입력창 영역 */
@@ -39,21 +40,25 @@ body {
     max-width: 360px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 20px;
+    gap: 7px;
+    margin-bottom: -7vh;
 }
 
 /* 개별 입력창 */
 .input-field {
     width: 100%;
     padding: 14px;
-    border: 2px solid #1E40AF;
+    border: 2px solid  white;
     border-radius: 10px;
     font-size: 16px;
     outline: none;
     background-color: #f8f9ff;
     box-sizing: border-box;
 }
+
+.input-field:focus {
+    border-color: #1E40AF;
+  }
 
 /* 비밀번호 찾기 */
 .forgot-password {
@@ -63,7 +68,9 @@ body {
     font-size: 14px;
     color: #1E40AF;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: -8vh;
+    text-align: right;
+    font-weight: 500;
 }
 
 /* 로그인 버튼 */
@@ -79,7 +86,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: -8vh;
 }
 
 .submit-button:hover {
@@ -90,4 +97,5 @@ body {
 .bottom-text {
     font-size: 14px;
     color: #333;
+    margin-bottom: 10vh;
 }
