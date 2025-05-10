@@ -50,13 +50,14 @@
 .form-group label {
   display: block;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
   font-size: 15px;
 }
 
 .ai-parameter {
     margin-left: 15px;
 }
+
 .input-box {
   width: 80%;
   padding: 14px;
@@ -92,27 +93,18 @@
 }
 
 .image-options {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.image-option {
-  width: 160px;
-  height: 120px;
-  border-radius: 12px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 3px solid transparent;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 14px;
+    gap: 6px;
+  }
 
 .image-option.selected {
   border-color: #1e3db4;
 }
 
 .ai-create-button {
-  margin-top: 40px;
+  margin-top: 12px;
   width: 100%;
   background-color: #1e3db4;
   color: white;
@@ -123,3 +115,25 @@
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.img-option {
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.2s;
+    width: 151px;
+    height: 124px;
+}
+
+/* ✅ 마우스 올렸을 때 파란색 보더 */
+.img-option:hover {
+    border-color: #1e3db4;
+
+}
+  /* ✅ 선택됐을 때도 유지 */
+  .image-option.selected {
+    border-color: #1e3db4;
+  }

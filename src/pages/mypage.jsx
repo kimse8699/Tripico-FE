@@ -11,7 +11,7 @@ function Mypage() {
           <div onClick={()=>{navigate('/')}}className="back-button"></div>
           <h2 className="mypage-title">MY</h2>
         </div>
-
+        
         <hr className="top-divider" />
 
         {/* 인사말 */}

@@ -33,12 +33,10 @@ function Create() {
       <div className="form-group">
         <label className="ai-parameter">가고싶은 곳을 선택해주세요</label>
         <div className="image-options">
-          <img
-            src="/img/themepark.jpg"
-            className="image-option selected"
-            alt="놀이공원"
-          />
-          <img src="/img/forest.jpg" className="image-option" alt="숲속 계곡" />
+          <div className="img-option" style={{ backgroundImage: `url('/img/img1.png')` }}></div>
+          <div className="img-option" style={{ backgroundImage: `url('/img/img2.png')` }}></div>
+          <div className="img-option" style={{ backgroundImage: `url('/img/img3.png')` }}></div>
+          <div className="img-option" style={{ backgroundImage: `url('/img/img4.png')` }}></div>
         </div>
       </div>
 
