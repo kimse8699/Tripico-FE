@@ -22,20 +22,31 @@ body {
 }
 
 .mypage-header {
+  display: flex;
   position: relative;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  
   margin-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .back-button {
+  width: 24px;
+  height: 24px;
+  background-image: url('/img/Chevron.png'); /* 이미지 경로 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .mypage-title {
@@ -43,18 +54,29 @@ body {
   font-weight: bold;
   color: #1e3db4;
   margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.divider {
+.top-divider {
   border: none;
   height: 1px;
   background-color: #1e3db4;
   margin: 12px 0;
 }
+.divider {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 36px auto;
+  width: 95%;
+}
 
 .welcome-text {
     position: relative;
-  margin: 16px 0;
+  margin: 23px 0;
   left: 5%;
 }
 
@@ -76,12 +98,21 @@ body {
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 32px;
+  gap: 12px;
 }
 
-.plan-item {
+.plan-item1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.plan-item2 {
+  display: flex;
+  justify-content: space-between;
+  
   font-size: 16px;
   font-weight: bold;
 }
@@ -93,23 +124,29 @@ body {
 .section-title {
   font-size: 14px;
   color: #888;
-  margin: 24px 0 8px;
+  margin: 24px 0 18px 18px;
 }
 
 .row-menu {
   display: flex;
-  justify-content: space-between;
+  gap: 33px;
+  justify-content: start;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin: 5px 0 17px 17px;
 }
 
 .footer-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 33px;
   align-items: center;
-  margin: 24px 0;
+  margin: 24px 0 0;
 }
-
+.login-id {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 21px;
+}
 .logout-button {
   background-color: #f2f2f2;
   padding: 8px 14px;
@@ -121,7 +158,8 @@ body {
 
 .logo {
   text-align: center;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 700;
   color: #1e3db4;
+  margin-top: 80px;
 }

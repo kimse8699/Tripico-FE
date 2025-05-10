@@ -1,16 +1,18 @@
 import "../pages_styles/mypage.css";
+import { useNavigate } from "react-router-dom";
 
 function Mypage() {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="mypage-container">
         {/* 상단 타이틀 */}
         <div className="mypage-header">
-          <button className="back-button">←</button>
+          <div onClick={()=>{navigate('/')}}className="back-button"></div>
           <h2 className="mypage-title">MY</h2>
         </div>
 
-        <hr className="divider" />
+        <hr className="top-divider" />
 
         {/* 인사말 */}
         <div className="welcome-text">
@@ -20,10 +22,10 @@ function Mypage() {
 
         {/* 여행 카드 */}
         <div className="plan-box">
-          <div className="plan-item">
+          <div className="plan-item1">
             <span>보유 여행</span> <span className="plan-count">1 PLAN</span>
           </div>
-          <div className="plan-item">
+          <div className="plan-item2">
             <span>생성 가능 일정</span>{" "}
             <span className="plan-count">3 PLAN</span>
           </div>
@@ -35,6 +37,7 @@ function Mypage() {
           <div>회원정보 수정</div>
           <div>여행 계획 목록</div>
         </div>
+        <hr className="divider" />
 
         {/* 이용 안내 */}
         <div className="section-title">이용안내</div>
@@ -47,8 +50,11 @@ function Mypage() {
 
         {/* ID + 로그아웃 */}
         <div className="footer-row">
-          <span>ID : tpgnstpgns12</span>
-          <button className="logout-button">로그아웃</button>
+          <div className="login-id">
+            <span>User ID &nbsp;: &nbsp;</span>
+            <span>tptpgnsgns12</span>
+          </div>
+          <button onClick={()=>{navigate('/welcome')}}className="logout-button">로그아웃</button>
         </div>
 
         {/* Tripico 로고 */}
