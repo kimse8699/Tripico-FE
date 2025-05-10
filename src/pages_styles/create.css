@@ -1,0 +1,125 @@
+.create-container {
+  padding: 24px;
+  font-family: "Pretendard Variable", sans-serif;
+  min-height: 100vh;
+}
+
+.create-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+}
+
+.back-button {
+  width: 24px;
+  height: 24px;
+  background-image: url("/img/Chevron.png"); /* 이미지 경로 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.create-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3db4;
+  margin: 0;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #1e3db4;
+    margin: 12px auto;
+    width: 95%;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.ai-parameter {
+    margin-left: 15px;
+}
+.input-box {
+  width: 80%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-left: 9px;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 6px;
+  margin-bottom: 5px;
+}
+
+.date-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tilde {
+  font-size: 20px;
+}
+
+.image-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-option {
+  width: 160px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.image-option.selected {
+  border-color: #1e3db4;
+}
+
+.ai-create-button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #1e3db4;
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
