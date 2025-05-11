@@ -16,7 +16,7 @@ function Home() {
         <div onClick={()=>{navigate('/created')}} className="schedule-card">
             <div className="schedule-circle" />
             <div className="schedule-text">
-            <div className="schedule-name">하회마을</div>
+            <div className="schedule-name">안동</div>
             <div className="schedule-date">3 days ago</div>
             </div>
             <div className="check-icon">✔</div>

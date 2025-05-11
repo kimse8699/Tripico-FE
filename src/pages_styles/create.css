@@ -45,6 +45,7 @@
 
 .form-group {
   margin-bottom: 24px;
+  margin-left: 12px;
 }
 
 .form-group label {
@@ -63,44 +64,62 @@
   padding: 14px;
   border: none;
   border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f2f4ff;
   font-size: 16px;
   margin-left: 9px;
 }
 
-.date-box {
+.time-limit-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   margin-left: 6px;
-  margin-bottom: 5px;
 }
 
-.date-input {
-  flex: 1;
-  padding: 8px;
+.time-select {
+  padding: 10px 14px;
+  font-size: 16px;
   border: none;
   border-radius: 12px;
-  background-color: #f2f2f2;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 400;
+  background-color: #f2f4ff;
+  font-weight: 600;
+  color: #1e3db4;
 }
 
-.tilde {
-  font-size: 20px;
+.colon {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.image-options {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 14px;
-    gap: 6px;
-  }
+.transport-options {
+  display: flex;
+  gap: 24px;
+  margin-top: 10px;
+  margin-left: 19px;
+}
 
-.image-option.selected {
-  border-color: #1e3db4;
+.transport-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+
+.dot.blue {
+  background-color: #1e3db4;
+}
+
+.transport-item.selected .dot {
+  background-color: #1e3db4;
 }
 
 .ai-create-button {
@@ -115,25 +134,3 @@
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.img-option {
-  border-radius: 12px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border: 3px solid transparent;
-  transition: border-color 0.2s;
-    width: 151px;
-    height: 124px;
-}
-
-/* ✅ 마우스 올렸을 때 파란색 보더 */
-.img-option:hover {
-    border-color: #1e3db4;
-
-}
-  /* ✅ 선택됐을 때도 유지 */
-  .image-option.selected {
-    border-color: #1e3db4;
-  }

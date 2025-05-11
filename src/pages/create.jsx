@@ -17,31 +17,47 @@ function Create() {
       {/* 입력 필드 */}
       <div className="form-group">
         <label className="ai-parameter">여행가고 싶은 지역을 말해주세요</label>
-        <input type="text" className="input-box" placeholder="예: 제주도" />
+        <input type="text" className="input-box" placeholder="예: 안동" />
       </div>
 
       <div className="form-group">
-        <label className="ai-parameter">여행 기간을 정해주세요</label>
-        <div className="date-box">
-          <input type="date" className="date-input" value="2025-04-14" />
-          <span className="tilde">~</span>
-          <input type="date" className="date-input" value="2025-04-17" />
+        <label className="ai-parameter">이동 소요 시간 최대치를 설정해주세요</label>
+        <div className="time-limit-box">
+          <select className="time-select">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            {/* ... */}
+          </select>
+          <span className="colon">:</span>
+          <select className="time-select">
+            <option>0</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            {/* ... */}
+          </select>
         </div>
       </div>
 
       <div className="form-group">
-        <label className="ai-parameter">여행가고 싶은 지역을 말해주세요</label>
-        <input type="text" className="input-box" placeholder="예: 강릉" />
+        <label className="ai-parameter">몇명이서 여행을 떠나나요?</label>
+        <input type="text" className="input-box" placeholder="예: 8" />
       </div>
 
       <div className="form-group">
-        <label className="ai-parameter">가고싶은 곳을 선택해주세요</label>
-        <div className="image-options">
-          <div className="img-option" style={{ backgroundImage: `url('/img/img1.png')` }}></div>
-          <div className="img-option" style={{ backgroundImage: `url('/img/img2.png')` }}></div>
-          <div className="img-option" style={{ backgroundImage: `url('/img/img3.png')` }}></div>
-          <div className="img-option" style={{ backgroundImage: `url('/img/img4.png')` }}></div>
+        <label className="ai-parameter">이동수단이 무엇인가요?</label>
+        <div className="transport-options">
+          <div className="transport-item"><span className="dot" /> 도보</div>
+          <div className="transport-item selected"><span className="dot blue" /> 대중교통</div>
+          <div className="transport-item"><span className="dot" /> 차량</div>
         </div>
+      </div>
+
+      <div className="form-group">
+        <label className="ai-parameter">원하는 여행을 간단하게 적어주세요!</label>
+        <textarea className="input-box" rows="3" placeholder="예: 자연을 즐기고 싶어요"></textarea>
       </div>
 
       {/* 생성 버튼 */}
