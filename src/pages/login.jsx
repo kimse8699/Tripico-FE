@@ -20,7 +20,7 @@ function Login() {
             비밀번호를 잊어버렸나요?
         </div>
 
-        <button onClick={()=>{navigate('/')}}className="submit-button">로그인</button>
+        <button onClick={()=>{navigate('/home')}}className="submit-button">로그인</button>
 
         <div onClick={()=>{navigate('/signup')}}className="bottom-text">
             새로운 계정을 만드세요!

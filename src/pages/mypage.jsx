@@ -8,10 +8,10 @@ function Mypage() {
       <div className="mypage-container">
         {/* 상단 타이틀 */}
         <div className="mypage-header">
-          <div onClick={()=>{navigate('/')}}className="back-button"></div>
+          <div onClick={()=>{navigate('/home')}}className="back-button"></div>
           <h2 className="mypage-title">MY</h2>
         </div>
-        
+
         <hr className="top-divider" />
 
         {/* 인사말 */}
@@ -54,7 +54,7 @@ function Mypage() {
             <span>User ID &nbsp;: &nbsp;</span>
             <span>tptpgnsgns12</span>
           </div>
-          <button onClick={()=>{navigate('/welcome')}}className="logout-button">로그아웃</button>
+          <button onClick={()=>{navigate('/')}}className="logout-button">로그아웃</button>
         </div>
 
         {/* Tripico 로고 */}

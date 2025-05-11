@@ -9,7 +9,7 @@ function Create() {
     <div className="create-container">
       {/* 상단 제목 */}
       <div className="create-header">
-        <div onClick={() => {navigate("/")}} className="back-button"></div>
+        <div onClick={() => {navigate("/home")}} className="back-button"></div>
         <h2 className="create-title">세부사항 입력</h2>
       </div>
       <div className="divider" />
