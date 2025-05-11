@@ -1,6 +1,10 @@
 import "../pages_styles/create.css";
+import { useNavigate } from "react-router-dom";
 
 function Create() {
+
+  const navigate = useNavigate()
+
   return (
     <div className="create-container">
       {/* 상단 제목 */}
