@@ -6,6 +6,7 @@ import Signup from './pages/signup.jsx'
 import Home from './pages/home.jsx'
 import Mypage from './pages/mypage.jsx'
 import Create from './pages/create.jsx'
+import Created from './pages/created.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/mypage' element={<Mypage/>}/>
         <Route path='/create' element={<Create/>}/>
+        <Route path='/created' element={<Created/>}/>
       </Routes>
     </BrowserRouter>
   )

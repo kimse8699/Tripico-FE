@@ -45,7 +45,7 @@ function Create() {
       </div>
 
       {/* 생성 버튼 */}
-      <button className="ai-create-button">일정 생성하기</button>
+      <button onClick={()=>{navigate('/created')}}className="ai-create-button">일정 생성하기</button>
     </div>
   );
 }

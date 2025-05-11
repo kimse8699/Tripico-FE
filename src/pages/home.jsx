@@ -13,7 +13,7 @@ function Home() {
         <div className="schedule-underline"></div>
 
         {/* 일정 카드 */}
-        <div className="schedule-card">
+        <div onClick={()=>{navigate('/created')}} className="schedule-card">
             <div className="schedule-circle" />
             <div className="schedule-text">
             <div className="schedule-name">하회마을</div>
