@@ -6,6 +6,9 @@ function Create() {
 
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false);
+  const [isClicked1, setIsClicked1] = useState(false);
+  const [isClicked2, setIsClicked2] = useState(false);
+  
 
   const handleCreate = () => {
     setIsLoading(true);
@@ -48,6 +51,8 @@ function Create() {
             <option>1</option>
             <option>2</option>
             <option>3</option>
+            <option>4</option>
+            <option>5</option>
             {/* ... */}
           </select>
           <span className="colon">:</span>
@@ -56,6 +61,8 @@ function Create() {
             <option>10</option>
             <option>20</option>
             <option>30</option>
+            <option>40</option>
+            <option>50</option>
             {/* ... */}
           </select>
         </div>
@@ -69,18 +76,20 @@ function Create() {
       <div className="form-group">
         <label className="ai-parameter">이동수단이 무엇인가요?</label>
         <div className="transport-options">
-          <div className="transport-item selected"><span className="dot blue" /> 대중교통</div>
-          <div className="transport-item"><span className="dot" /> 차량</div>
+          <div className="transport-item selected"><span className={`dot1 ${isClicked1 ? "selected" : ""}`} 
+          onClick={()=> !isClicked1 && setIsClicked1(true)}/> 대중교통</div>
+          <div className="transport-item"><span className={`dot2 ${isClicked2 ? "selected" : ""}`} 
+          onClick={()=> !isClicked2 && setIsClicked2(true)}/> 차량</div>
         </div>
       </div>
 
       <div className="form-group">
         <label className="ai-parameter">원하는 여행을 간단하게 적어주세요!</label>
-        <textarea className="input-box" rows="3" placeholder="예: 자연을 즐기고 싶어요"></textarea>
+        <textarea className="input-box" rows="3" placeholder="예: 자연을 즐기고 싶어요" spellCheck={false}></textarea>
       </div>
 
       {/* 생성 버튼 */}
-      <button onClick={handleCreate}className="ai-create-button">일정 생성하기</button>
+      <button onClick={handleCreate}className="ai-create-button">여행지 추천 받기</button>
     </div>
   );
 }

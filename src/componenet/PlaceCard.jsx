@@ -6,7 +6,7 @@ function PlaceCard({ title, description, startAddr, destAddr, busTime, carTime }
   const navigate = useNavigate();
 
   const handeClick = () => {
-    navigate('/created')
+    navigate('/result')
   }
 
   return (

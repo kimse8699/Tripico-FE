@@ -89,6 +89,7 @@
 .colon {
   font-size: 24px;
   font-weight: bold;
+  color: #1e3db4;
 }
 
 .transport-options {
@@ -101,24 +102,33 @@
 .transport-item {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-weight: bold;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
   font-size: 15px;
-  color: #333;
 }
 
-.dot {
+.dot1 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: lightgray;
+  transition: background-color 0.2s;
 }
 
-.dot.blue {
+.dot1.selected {
   background-color: #1e3db4;
 }
 
-.transport-item.selected .dot {
+.dot2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+  transition: background-color 0.2s;
+}
+
+.dot2.selected {
   background-color: #1e3db4;
 }
 

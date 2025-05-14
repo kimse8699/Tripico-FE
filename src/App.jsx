@@ -7,8 +7,9 @@ import Signup from './pages/signup.jsx'
 import Home from './pages/home.jsx'
 import Mypage from './pages/mypage.jsx'
 import Create from './pages/create.jsx'
-import Created from './pages/created.jsx'
 import ResultList from './pages/resultlist.jsx'
+import Result from './pages/result.jsx'
+import EmptyHome from './pages/emptyhome.jsx'
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
         <Route path='/mypage' element={<Mypage/>}/>
         <Route path='/create' element={<Create/>}/>
         <Route path='/resultlist' element={<ResultList/>}/>
-        <Route path='/created' element={<Created/>}/>
+        <Route path='result' element={<Result/>}/>
+        <Route path='/emptyhome' element={<EmptyHome/>}/>
       </Routes>
     </BrowserRouter>
   )

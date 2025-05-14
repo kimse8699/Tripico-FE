@@ -1,7 +1,7 @@
 import '../pages_styles/home.css'
 import { useNavigate } from 'react-router-dom';
 
-function Home() {
+function EmptyHome() {
     const navigate = useNavigate ();
     return (
         <div className="schedule-container">
@@ -12,15 +12,12 @@ function Home() {
         </div>
         <div className="schedule-underline"></div>
 
-        {/* 일정 카드 */}
-        <div onClick={()=>{navigate('/resultlist')}} className="schedule-card">
-            <div className="schedule-circle" />
-            <div className="schedule-text">
-            <div className="schedule-name">안동</div>
-            <div className="schedule-date">1 minute ago</div>
-            </div>
-            <div className="check-icon">✔</div>
-        </div>
+        <p style={{
+          textAlign: 'center',
+          color: '#888',
+          fontSize: '16px',
+          marginTop: '40px'
+        }}>생성된 여행지가 없습니다</p>
 
         {/* 일정 생성 버튼 */}
         <button onClick={()=>{navigate('/create')}}className="create-button">여행지 생성하기</button>
@@ -28,4 +25,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default EmptyHome;

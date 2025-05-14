@@ -11,7 +11,7 @@ function Login() {
 
     setTimeout(() => {
       setIsLoading(false); // 로딩 종료
-      navigate('/home');
+      navigate('/emptyhome');
     }, 2000); // 예시: 2초간 로딩
   };
   

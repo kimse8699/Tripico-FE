@@ -14,7 +14,7 @@ function ResultList() {
         <h2 className="resultlist-title">여행지 추천</h2>
       </div>
       <div className="divider" />
-      <PlaceCard onClick={()=>{navigate('/created')}}
+      <PlaceCard
         title="하회마을"
         description="안동 하회마을은 경상북도 안동시 풍천면에 있는 전통 민속마을이다."
         startAddr="경북 안동시 송천동 388"
