@@ -134,3 +134,36 @@
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Pretendard Variable', sans-serif;
+  color: #1e3db4;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 6px solid #cce0ff;
+  border-top: 6px solid #1e3db4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

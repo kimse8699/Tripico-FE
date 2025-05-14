@@ -1,0 +1,44 @@
+.resultlist-container {
+  padding: 24px;
+  font-family: "Pretendard Variable", sans-serif;
+  min-height: 100vh;
+}
+
+.resultlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+}
+
+.back-button {
+  width: 24px;
+  height: 24px;
+  background-image: url("/img/Chevron.png"); /* 이미지 경로 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.resultlist-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3db4;
+  margin: 0;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #1e3db4;
+    margin: 12px auto;
+    width: 95%;
+}

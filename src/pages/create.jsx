@@ -1,12 +1,32 @@
 import "../pages_styles/create.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react"
 
 function Create() {
 
   const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleCreate = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false); // 로딩 종료
+      navigate('/resultlist');
+    }, 8000); // 예시: 2초간 로딩
+  };
+
 
   return (
     <div className="create-container">
+      {/* 로딩 화면 */}
+      {isLoading && (
+        <div className="loading-overlay">
+          <div className="spinner"></div>
+          <p>일정을 생성 중입니다...</p>
+        </div>
+      )}
+
       {/* 상단 제목 */}
       <div className="create-header">
         <div onClick={() => {navigate("/home")}} className="back-button"></div>
@@ -49,7 +69,6 @@ function Create() {
       <div className="form-group">
         <label className="ai-parameter">이동수단이 무엇인가요?</label>
         <div className="transport-options">
-          <div className="transport-item"><span className="dot" /> 도보</div>
           <div className="transport-item selected"><span className="dot blue" /> 대중교통</div>
           <div className="transport-item"><span className="dot" /> 차량</div>
         </div>
@@ -61,7 +80,7 @@ function Create() {
       </div>
 
       {/* 생성 버튼 */}
-      <button onClick={()=>{navigate('/created')}}className="ai-create-button">일정 생성하기</button>
+      <button onClick={handleCreate}className="ai-create-button">일정 생성하기</button>
     </div>
   );
 }
