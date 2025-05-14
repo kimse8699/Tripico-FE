@@ -35,6 +35,7 @@ function Signup() {
             <input type="email" placeholder="User ID" className="signup-input-field" />
             <input type="password" placeholder="Password" className="signup-input-field" />
             <input type="password" placeholder="Confirm Password" className="signup-input-field" />
+            <input type="name" placeholder="Your Name" spellCheck={false} className="signup-input-field" />
         </div>
 
         <button onClick={handleCreate} className="signup-submit-button">회원가입</button>
